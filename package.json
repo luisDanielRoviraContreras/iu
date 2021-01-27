@@ -15,8 +15,7 @@
   },
   "dependencies": {
     "@capacitor/android": "^2.4.6",
-    "@capacitor/cli": "^2.4.6",
-    "@capacitor/core": "^2.4.6",
+    "@capacitor/core": "2.4.6",
     "@capacitor/ios": "^2.4.6",
     "@nuxt/typescript-runtime": "^0.4.10",
     "@nuxtjs/axios": "^5.11.0",
@@ -29,6 +28,7 @@
     "vuex-class": "^0.3.2"
   },
   "devDependencies": {
+    "@capacitor/cli": "2.4.6",
     "@nuxt/components": "^1.2.5",
     "@nuxt/typescript-build": "^1.0.3",
     "@nuxtjs/eslint-config": "^3.0.0",

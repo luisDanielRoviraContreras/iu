@@ -1,6 +1,6 @@
 {
-  "appId": "com.iu",
-  "appName": "Iu",
+  "appId": "io.ionic.starter",
+  "appName": "iu",
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "dist",
