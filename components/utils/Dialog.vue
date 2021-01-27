@@ -31,7 +31,7 @@
 </template>
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-property-decorator'
-// import anime from 'animejs/lib/anime.min.js'
+import anime from 'animejs/lib/anime.min.js'
 @Component
 export default class Content extends Vue {
   @Prop({}) value: any
@@ -65,35 +65,35 @@ export default class Content extends Vue {
       this.expand = false
     } else if (this.move < 130) {
       this.expand = true
-      // anime({
-      //   targets: (this.$refs.con as any),
-      //   translateY: 0,
-      //   easing: 'cubicBezier(0.83, 0, 0.17, 1)',
-      //   duration: 250
-      // })
+      anime({
+        targets: (this.$refs.con as any),
+        translateY: 0,
+        easing: 'cubicBezier(0.83, 0, 0.17, 1)',
+        duration: 250
+      })
       setTimeout(() => {
         this.move = 0;
         (this.$refs.con as any).classList.remove('not-transition')
       }, 250);
     } else if (!this.expand) {
-      // anime({
-      //   targets: (this.$refs.con as any),
-      //   translateY: window.innerHeight / 3,
-      //   easing: 'cubicBezier(0.83, 0, 0.17, 1)',
-      //   duration: 250
-      // })
+      anime({
+        targets: (this.$refs.con as any),
+        translateY: window.innerHeight / 3,
+        easing: 'cubicBezier(0.83, 0, 0.17, 1)',
+        duration: 250
+      })
       setTimeout(() => {
         this.move = window.innerHeight / 3;
         (this.$refs.con as any).classList.remove('not-transition')
       }, 250);
     } else {
       this.expand = true
-      // anime({
-      //   targets: (this.$refs.con as any),
-      //   translateY: 0,
-      //   easing: 'cubicBezier(0.83, 0, 0.17, 1)',
-      //   duration: 250
-      // })
+      anime({
+        targets: (this.$refs.con as any),
+        translateY: 0,
+        easing: 'cubicBezier(0.83, 0, 0.17, 1)',
+        duration: 250
+      })
       setTimeout(() => {
         this.move = 0;
         (this.$refs.con as any).classList.remove('not-transition')

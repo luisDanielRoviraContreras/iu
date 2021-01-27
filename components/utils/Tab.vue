@@ -20,7 +20,7 @@
 </template>
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-// import anime from 'animejs/lib/anime.min.js'
+import anime from 'animejs/lib/anime.min.js'
 @Component
 export default class contentPage extends Vue {
   touchStart: any = {
@@ -38,12 +38,12 @@ export default class contentPage extends Vue {
     if (this.move > 270) {
       this.$router.go(-1)
     } else {
-      // anime({
-      //   targets: this.$refs.con,
-      //   translateY: 0,
-      //   easing: 'cubicBezier(0.83, 0, 0.17, 1)',
-      //   duration: 250
-      // })
+      anime({
+        targets: this.$refs.con,
+        translateY: 0,
+        easing: 'cubicBezier(0.83, 0, 0.17, 1)',
+        duration: 250
+      })
       setTimeout(() => {
         this.move = 0
       }, 250);
@@ -113,7 +113,6 @@ export default class contentPage extends Vue {
   height: calc(var(--vh, 1vh) * 97)
   background: #ff0
   border-radius: 20px 20px 0px 0px
-  overflow: hidden
 
 .btn-close
   position: relative

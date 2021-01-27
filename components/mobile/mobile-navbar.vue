@@ -7,9 +7,9 @@
       Mensajes
     </h4>
     <button @click="openConfig = !openConfig">config</button>
-    <Content v-model="openConfig">
+    <Dialog v-model="openConfig">
       hola mundo
-    </Content>
+    </Dialog>
   </div>
 </template>
 <script lang="ts">
